@@ -1,0 +1,195 @@
+:root {
+    --primary-color: #d8fcff;
+    --secondary-color: #fff;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.pharmacy {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.pharmacy img {
+    width: 100%;
+    max-width: 650px;
+    border: 2px solid black;
+}
+
+.form-container {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 9px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+.pharmacy-heading {
+    margin-bottom: 20px;
+    color: #007b5e;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+.checkbox-group {
+    margin: 20px 0;
+}
+
+.checkbox-heading {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.checkbox-group label {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.form-group textarea {
+    resize: vertical;
+    height: 60px;
+}
+
+button {
+    display: inline-block;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: #333;
+    color: white;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.grid .box {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 20px;
+    border: 1px solid black;
+    height: 225px;
+    width: 230px;
+    box-sizing: border-box;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.grid .box:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+}
+
+.grid .box h4 {
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+.grid .box p {
+    color: black;
+    line-height: 1.8;
+    font-size: 13px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .form-container {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .pharmacy img {
+        max-width: 100%;
+    }
+
+    .form-container {
+        margin-left: 0;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-heading {
+        font-size: 20px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        font-size: 12px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .grid .box {
+        width: 100%;
+        height: auto;
+    }
+
+    .grid .box h4 {
+        font-size: 14px;
+    }
+
+    .grid .box p {
+        font-size: 12px;
+    }
+}

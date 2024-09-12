@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles/Pharmacy.css">
+    <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" href="styles/headerText.css">
+    <link rel="icon" href="./Pictures/Green_Simple_Medical_Clinic_Logo-removebg-preview.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Dr KANDY HOSPITAL</title>
+</head>
+<body>
+
+<header>
+    <!--Logo and Navigation Bar-->
+    <nav>
+        <section class="logo">
+            <a href="./index.html">
+                <img src="./Pictures/Green_Simple_Medical_Clinic_Logo-removebg-preview.png" style="width: 300px;" alt="logo">
+            </a>
+        </section>
+        <!-- Hamburger menu -->
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="menu" id="menu">
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./about.html">ABOUT US</a></li>
+            <li><a href="./services.html">SERVICES</a></li>
+            <li><a href="./doctors.html">DOCTORS</a></li>
+            <li><a href="./reservation.html">RESERVATION</a></li>
+            <li><a href="./pharmacy.html">PHARMACY</a></li>
+            <li><a href="./contact.html">CONTACT US</a></li>
+            <input type="text" placeholder="Search.." class="searchBox">
+            <button type="button" class="searchButton"><i class="fa fa-search"></i></button>
+        </ul>
+
+    </nav>
+</header>
+
+    <!--Phrase, appoinment button and hotline-->
+    <section class="textbox">
+        <h1>Pharmacy</h1>
+        <a href="./reservation.html" class="appbtn">Appointment</a><br>
+    </section>
+<span class="hotline">HOTLINE - 5990</span>
+
+    <!--Pharmacy form-->
+    <div class="container">
+        <div class="pharmacy">
+            <img class="img" src="./Pictures/pharmacy store.jpg">
+        </div>
+        <div class="form-container">
+            <form action="stocks.php" method="post">
+                <div class="pharmacy-container">
+                    <h2 class="pharmacy-heading">Check Out Our Stocks</h2>
+                    <div class="form-group">
+                        <label for="pharmacy-name">Full Name:</label>
+                        <input type="text" id="payment-name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="pharmacy-phone">Contact Number:</label>
+                        <input type="tel" id="payment-phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="pharmacy-location">Pharmacy Location:</label>
+                        <select id="pharmacy-location" name="location" required>
+                            <option value="" disabled selected>Select Location</option>
+                            <option value="Kandy">Kandy Hospital</option>
+                            <option value="Colombo">Colombo Hospital</option>
+                            <option value="Galle">Galle Hospital</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="medication-name">Medication Name:</label>
+                        <input type="text" id="medication-name" name="medication-name" required>
+                    </div>
+                    <div class="form-group">
+                    <label for="pharmacy-Medi">Medication Type:</label>
+                        <select id="pharmacy-Medi" name="type" required>
+                            <option value="" disabled selected>Select Type</option>
+                            <option value="prescription">Prescription Medication</option>
+                            <option value="otc">Over-the-Counter Medication</option>
+                            <option value="specialty">Specialty Medication</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="quantity">Quantity Needed:</label>
+                        <input type="number" id="quantity" name="quantity" required>
+                    </div>
+                    <div class="checkbox-group">
+                        <h3 class="checkbox-heading">Preferred Contact Method:</h3>
+                        <label class="checkbox-item">
+                            <input type="Checkbox" name="contact-method" value="email">
+                            Email
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="Checkbox" name="contact-method" value="phone">
+                            Phone
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="Checkbox" name="contact-method" value="text">
+                            Text Message
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label for="comments">Additional Comments:</label>
+                        <textarea id="comments" name="comments"></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+       </div>
+    </div>
+    
+
+    <section>
+        <h2>Why You Can Rely On Us</h2>
+        <div class="grid">
+            <div class="box">
+                <h4>Always Open</h4>
+                <p>We operate 24hours a day, 7 days a week, so you can get the medications you need, whenever you need them.</p>
+            </div>
+
+            <div class="box">
+                <h4>Serving All Needs</h4>
+                <p>We cater to both inpatient and outpatient needs, dispensing medications prescribed by our doctors or even external prescriptions brought by you.</p>
+            </div>
+
+            <div class="box">
+                <h4>Expert Care</h4>
+                <p>Our team of qualified pharmacists meticulously reviews and dispenses every medication, following strict safety protocols for your well-being.</p>
+            </div>
+
+            <div class="box">
+                <h4>Wide Range of Products</h4>
+                <p>We stock a comprehensive selection of essential medications, over-the-counter drugs and healthcare supplies to meet your diverse needs.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+<!--footer bar-->
+    <footer class="footer">
+        <div class="foot_container">
+            <div class="row">
+                <div class="footer-col">
+                    <a href="./index.html">
+                    <img src="./Pictures/Green_Simple_Medical_Clinic_Logo-removebg-preview.png" width="200px"></a>
+                    <P>Dr Kandy Hospital, established in 1990 and proudly serving the Kandy community for over three decades.</P>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="./about.html">About us</a></li>
+                        <li><a href="./reservation.html">Reservation</a></li>
+                        <li><a href="./pharmacy.html">pharmacy</a></li>
+                        <li><a href="./contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Phone Numbers and Email:</h4>
+                    <ul>
+                        <li>+94 76 410 3544</li>
+                        <li>+94 76 410 3544</li>
+                        <li>+94 76 410 3544</li>
+                        <li>Email:
+                            contactus@drkandy.com
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>follow us on</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <p>&copy; Dr Kandy Hospital 2024 All rights reserved.</p>
+        </div>
+    </footer>
+<script src="script/menu.js"></script>
+<!--Source
+https://www.freepik.com/
+https://www.nawaloka.com/
+-->
+</body>
+</html>
+

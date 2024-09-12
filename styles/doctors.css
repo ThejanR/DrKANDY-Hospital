@@ -1,0 +1,124 @@
+:root {
+    --primary-color: #d8fcff;
+    --secondary-color: #fff;
+}
+
+.doctorcon {
+    margin-top: 50px;
+    padding: 15px;
+    padding-bottom: 20px;
+    margin-left: 20px;
+}
+
+.doctorcon .box_doc {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.doctorcon .box_doc .box {
+    text-align: center;
+    padding: 20px 20px;
+    border: 0 black solid;
+    transition: 0.3s;
+    width: 400px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.doctorcon .box_doc .box img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border: 2px solid black;
+    transition: transform 0.3s ease;
+}
+
+.doctorcon .box_doc .box:hover img {
+    transform: scale(1.05);
+}
+
+.doctorcon .box_doc .box h3 {
+    color: black;
+    font-weight: bold;
+    width: 300px;
+    font-size: 18px;
+    margin-left: 30px;
+    border: 2px solid black;
+    border-bottom: 0;
+    background-color: var(--primary-color);
+}
+
+.doctorcon .box_doc .box h4 {
+    color: black;
+    width: 300px;
+    border: 2px solid black;
+    font-size: 15px;
+    margin-left: 30px;
+    border-top: 0;
+    background-color: var(--primary-color);
+}
+
+.doctorcon .box_doc .box p {
+    color: black;
+    line-height: 1.8;
+    width: 300px;
+    margin-left: 30px;
+    font-size: 16px;
+    background-color: var(--primary-color);
+    border: 2px solid black;
+    margin-top: 5px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .doctorcon .box_doc {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .doctorcon .box_doc .box {
+        width: 350px;
+    }
+
+    .doctorcon .box_doc .box img {
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .doctorcon .box_doc {
+        grid-template-columns: 1fr;
+    }
+
+    .doctorcon .box_doc .box {
+        width: 100%;
+    }
+
+    .doctorcon .box_doc .box img {
+        max-width: 200px;
+    }
+
+    .doctorcon .box_doc .box h3, .doctorcon .box_doc .box h4, .doctorcon .box_doc .box p {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .doctorcon .box_doc .box img {
+        max-width: 150px;
+    }
+
+    .doctorcon .box_doc .box h3 {
+        font-size: 16px;
+    }
+
+    .doctorcon .box_doc .box h4 {
+        font-size: 14px;
+    }
+
+    .doctorcon .box_doc .box p {
+        font-size: 14px;
+    }
+}

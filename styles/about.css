@@ -1,0 +1,218 @@
+
+:root {
+    --primary-color: #d8fcff;
+    --secondary-color: #fff;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    margin-top: 50px;
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--primary-color);
+    width: 600px;
+    border-radius: 4px;
+    border: black solid;
+}
+
+.container p {
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 26px;
+}
+
+.bh {
+    align-items: flex-start;
+    margin: 3vh;
+}
+
+.bg {
+    background-image: url(../Pictures/team-young-specialist-doctors-standing-corridor-hospital.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    border: 3px solid black;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    background-color: var(--primary-color);
+    border: black solid;
+    margin-left: 20px;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.content p {
+    font-family: "Roboto", sans-serif;
+    font-size: 19px;
+    color: black;
+    text-align: justify;
+    margin: 0;
+}
+
+.location .h2 {
+    text-align: center;
+    padding-top: 25px;
+    color: black;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    font-size: 35px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.location .img {
+    width: 70%;
+    height: 550px;
+    margin-left: 240px;
+    margin-top: 20px;
+    border: 2px solid black;
+}
+
+.location .description {
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 70%;
+    margin-left: 240px;
+    background-color: var(--primary-color);
+    border: 2px solid black;
+}
+
+.location .google-map {
+    width: 60%;
+    height: 60%;
+    margin-left: 320px;
+    margin-top: 10px;
+    border: 2px solid black;
+}
+
+.summery {
+    width: 85%;
+    height: 250px;
+    margin: 20px 0 20px 115px;
+}
+
+.summery, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.heading {
+    font-size: 19px;
+}
+
+.heading:hover {
+    background-color: #f4f4f4;
+}
+
+tr:hover {
+    background-color: var(--primary-color);
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .container {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .bh {
+        flex-direction: column;
+    }
+
+    .bg {
+        height: 300px;
+    }
+
+    .content {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .location .img, .location .description {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .location .google-map {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .summery {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .textbox {
+        font-size: 3vh;
+    }
+
+    .appbtn {
+        width: 120px;
+        font-size: 12px;
+    }
+
+    .location .img, .location .description {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .location .google-map {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .summery {
+        width: 100%;
+    }
+
+    .bg {
+        height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .textbox {
+        font-size: 2.5vh;
+    }
+
+    .appbtn {
+        width: 100px;
+        font-size: 10px;
+    }
+
+    .location .img, .location .description, .location .google-map {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .summery {
+        width: 100%;
+    }
+
+    .bg {
+        height: 200px;
+    }
+
+    .content p {
+        font-size: 16px;
+    }
+}
